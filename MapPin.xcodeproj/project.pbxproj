@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23DFA6E9382F344310012E8D /* libPods-MapPinTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 713F6DBC09AF005853D0034C /* libPods-MapPinTests.a */; };
+		2F12D5858F82BF5CFCF762AC /* libPods-MapPin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B433C465328C8ED1FC9C791A /* libPods-MapPin.a */; };
 		A22F6FA621C97978004076C7 /* MapPin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A22F6F9C21C97978004076C7 /* MapPin.framework */; };
 		A22F6FAB21C97978004076C7 /* MapPinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22F6FAA21C97978004076C7 /* MapPinTests.swift */; };
 		A22F6FAD21C97978004076C7 /* MapPin.h in Headers */ = {isa = PBXBuildFile; fileRef = A22F6F9F21C97978004076C7 /* MapPin.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,12 +25,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		713F6DBC09AF005853D0034C /* libPods-MapPinTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MapPinTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		74B77EE2867AECCC4F16865F /* Pods-MapPinTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapPinTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MapPinTests/Pods-MapPinTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A22F6F9C21C97978004076C7 /* MapPin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MapPin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A22F6F9F21C97978004076C7 /* MapPin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapPin.h; sourceTree = "<group>"; };
 		A22F6FA021C97978004076C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A22F6FA521C97978004076C7 /* MapPinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapPinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A22F6FAA21C97978004076C7 /* MapPinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPinTests.swift; sourceTree = "<group>"; };
 		A22F6FAC21C97978004076C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B433C465328C8ED1FC9C791A /* libPods-MapPin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MapPin.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC60A4D42BD91A3AF0396F6A /* Pods-MapPin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapPin.release.xcconfig"; path = "Pods/Target Support Files/Pods-MapPin/Pods-MapPin.release.xcconfig"; sourceTree = "<group>"; };
+		C1B20CB36A6A9659D16395E0 /* Pods-MapPin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapPin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MapPin/Pods-MapPin.debug.xcconfig"; sourceTree = "<group>"; };
+		E30A1FE58A42651799CBC412 /* Pods-MapPinTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapPinTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MapPinTests/Pods-MapPinTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F12D5858F82BF5CFCF762AC /* libPods-MapPin.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,18 +53,41 @@
 			buildActionMask = 2147483647;
 			files = (
 				A22F6FA621C97978004076C7 /* MapPin.framework in Frameworks */,
+				23DFA6E9382F344310012E8D /* libPods-MapPinTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2765D1732F6DE249D461CB0C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C1B20CB36A6A9659D16395E0 /* Pods-MapPin.debug.xcconfig */,
+				BC60A4D42BD91A3AF0396F6A /* Pods-MapPin.release.xcconfig */,
+				74B77EE2867AECCC4F16865F /* Pods-MapPinTests.debug.xcconfig */,
+				E30A1FE58A42651799CBC412 /* Pods-MapPinTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		83F4F9DF1C7EABA7E3E50611 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B433C465328C8ED1FC9C791A /* libPods-MapPin.a */,
+				713F6DBC09AF005853D0034C /* libPods-MapPinTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A22F6F9221C97978004076C7 = {
 			isa = PBXGroup;
 			children = (
 				A22F6F9E21C97978004076C7 /* MapPin */,
 				A22F6FA921C97978004076C7 /* MapPinTests */,
 				A22F6F9D21C97978004076C7 /* Products */,
+				2765D1732F6DE249D461CB0C /* Pods */,
+				83F4F9DF1C7EABA7E3E50611 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +103,8 @@
 		A22F6F9E21C97978004076C7 /* MapPin */ = {
 			isa = PBXGroup;
 			children = (
+				A2AC03D921C97C5400024A7D /* Manager */,
+				A2AC03D821C97C2600024A7D /* View */,
 				A22F6F9F21C97978004076C7 /* MapPin.h */,
 				A22F6FA021C97978004076C7 /* Info.plist */,
 			);
@@ -84,6 +118,20 @@
 				A22F6FAC21C97978004076C7 /* Info.plist */,
 			);
 			path = MapPinTests;
+			sourceTree = "<group>";
+		};
+		A2AC03D821C97C2600024A7D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A2AC03D921C97C5400024A7D /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,6 +152,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A22F6FB021C97978004076C7 /* Build configuration list for PBXNativeTarget "MapPin" */;
 			buildPhases = (
+				1D329352FC2BA06C0A8212F3 /* [CP] Check Pods Manifest.lock */,
 				A22F6F9721C97978004076C7 /* Headers */,
 				A22F6F9821C97978004076C7 /* Sources */,
 				A22F6F9921C97978004076C7 /* Frameworks */,
@@ -122,6 +171,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A22F6FB321C97978004076C7 /* Build configuration list for PBXNativeTarget "MapPinTests" */;
 			buildPhases = (
+				6FDC3955E8E07712AFE5F857 /* [CP] Check Pods Manifest.lock */,
 				A22F6FA121C97978004076C7 /* Sources */,
 				A22F6FA221C97978004076C7 /* Frameworks */,
 				A22F6FA321C97978004076C7 /* Resources */,
@@ -188,6 +238,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D329352FC2BA06C0A8212F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MapPin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FDC3955E8E07712AFE5F857 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MapPinTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A22F6F9821C97978004076C7 /* Sources */ = {
@@ -340,6 +437,7 @@
 		};
 		A22F6FB121C97978004076C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1B20CB36A6A9659D16395E0 /* Pods-MapPin.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -365,6 +463,7 @@
 		};
 		A22F6FB221C97978004076C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC60A4D42BD91A3AF0396F6A /* Pods-MapPin.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -390,6 +489,7 @@
 		};
 		A22F6FB421C97978004076C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74B77EE2867AECCC4F16865F /* Pods-MapPinTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H4V3747L77;
@@ -408,6 +508,7 @@
 		};
 		A22F6FB521C97978004076C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E30A1FE58A42651799CBC412 /* Pods-MapPinTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H4V3747L77;
