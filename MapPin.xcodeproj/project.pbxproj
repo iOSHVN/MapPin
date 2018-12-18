@@ -10,8 +10,14 @@
 		23DFA6E9382F344310012E8D /* libPods-MapPinTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 713F6DBC09AF005853D0034C /* libPods-MapPinTests.a */; };
 		2F12D5858F82BF5CFCF762AC /* libPods-MapPin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B433C465328C8ED1FC9C791A /* libPods-MapPin.a */; };
 		A22F6FA621C97978004076C7 /* MapPin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A22F6F9C21C97978004076C7 /* MapPin.framework */; };
-		A22F6FAB21C97978004076C7 /* MapPinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22F6FAA21C97978004076C7 /* MapPinTests.swift */; };
 		A22F6FAD21C97978004076C7 /* MapPin.h in Headers */ = {isa = PBXBuildFile; fileRef = A22F6F9F21C97978004076C7 /* MapPin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2AC03DE21C97E5E00024A7D /* Pin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2AC03DD21C97E5E00024A7D /* Pin.storyboard */; };
+		A2AC03E021C97E7A00024A7D /* PinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AC03DF21C97E7A00024A7D /* PinViewController.swift */; };
+		A2AC03E621C982D900024A7D /* UIImageView+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AC03E521C982D900024A7D /* UIImageView+Extention.swift */; };
+		A2AC03E821C9849200024A7D /* MapPinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AC03E721C9849200024A7D /* MapPinManager.swift */; };
+		A2AC03EA21C985C800024A7D /* MapPinManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AC03E921C985C800024A7D /* MapPinManagerProtocol.swift */; };
+		A2AC03EE21C99F9200024A7D /* MapPinConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AC03ED21C99F9200024A7D /* MapPinConstants.swift */; };
+		A2AC03F021C9A17600024A7D /* MapPinManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AC03EF21C9A17600024A7D /* MapPinManagerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,8 +37,14 @@
 		A22F6F9F21C97978004076C7 /* MapPin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapPin.h; sourceTree = "<group>"; };
 		A22F6FA021C97978004076C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A22F6FA521C97978004076C7 /* MapPinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapPinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A22F6FAA21C97978004076C7 /* MapPinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPinTests.swift; sourceTree = "<group>"; };
 		A22F6FAC21C97978004076C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2AC03DD21C97E5E00024A7D /* Pin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pin.storyboard; sourceTree = "<group>"; };
+		A2AC03DF21C97E7A00024A7D /* PinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinViewController.swift; sourceTree = "<group>"; };
+		A2AC03E521C982D900024A7D /* UIImageView+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extention.swift"; sourceTree = "<group>"; };
+		A2AC03E721C9849200024A7D /* MapPinManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPinManager.swift; sourceTree = "<group>"; };
+		A2AC03E921C985C800024A7D /* MapPinManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPinManagerProtocol.swift; sourceTree = "<group>"; };
+		A2AC03ED21C99F9200024A7D /* MapPinConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPinConstants.swift; sourceTree = "<group>"; };
+		A2AC03EF21C9A17600024A7D /* MapPinManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPinManagerTests.swift; sourceTree = "<group>"; };
 		B433C465328C8ED1FC9C791A /* libPods-MapPin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MapPin.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC60A4D42BD91A3AF0396F6A /* Pods-MapPin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapPin.release.xcconfig"; path = "Pods/Target Support Files/Pods-MapPin/Pods-MapPin.release.xcconfig"; sourceTree = "<group>"; };
 		C1B20CB36A6A9659D16395E0 /* Pods-MapPin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapPin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MapPin/Pods-MapPin.debug.xcconfig"; sourceTree = "<group>"; };
@@ -103,6 +115,7 @@
 		A22F6F9E21C97978004076C7 /* MapPin */ = {
 			isa = PBXGroup;
 			children = (
+				A2AC03E421C982BE00024A7D /* Helper */,
 				A2AC03D921C97C5400024A7D /* Manager */,
 				A2AC03D821C97C2600024A7D /* View */,
 				A22F6F9F21C97978004076C7 /* MapPin.h */,
@@ -114,8 +127,8 @@
 		A22F6FA921C97978004076C7 /* MapPinTests */ = {
 			isa = PBXGroup;
 			children = (
-				A22F6FAA21C97978004076C7 /* MapPinTests.swift */,
 				A22F6FAC21C97978004076C7 /* Info.plist */,
+				A2AC03EF21C9A17600024A7D /* MapPinManagerTests.swift */,
 			);
 			path = MapPinTests;
 			sourceTree = "<group>";
@@ -123,6 +136,8 @@
 		A2AC03D821C97C2600024A7D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A2AC03DD21C97E5E00024A7D /* Pin.storyboard */,
+				A2AC03DF21C97E7A00024A7D /* PinViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -130,8 +145,19 @@
 		A2AC03D921C97C5400024A7D /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				A2AC03E721C9849200024A7D /* MapPinManager.swift */,
+				A2AC03E921C985C800024A7D /* MapPinManagerProtocol.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		A2AC03E421C982BE00024A7D /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				A2AC03E521C982D900024A7D /* UIImageView+Extention.swift */,
+				A2AC03ED21C99F9200024A7D /* MapPinConstants.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,9 +224,11 @@
 				TargetAttributes = {
 					A22F6F9B21C97978004076C7 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					A22F6FA421C97978004076C7 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -227,6 +255,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2AC03DE21C97E5E00024A7D /* Pin.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +320,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2AC03EA21C985C800024A7D /* MapPinManagerProtocol.swift in Sources */,
+				A2AC03E821C9849200024A7D /* MapPinManager.swift in Sources */,
+				A2AC03E021C97E7A00024A7D /* PinViewController.swift in Sources */,
+				A2AC03E621C982D900024A7D /* UIImageView+Extention.swift in Sources */,
+				A2AC03EE21C99F9200024A7D /* MapPinConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,7 +332,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A22F6FAB21C97978004076C7 /* MapPinTests.swift in Sources */,
+				A2AC03F021C9A17600024A7D /* MapPinManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +473,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C1B20CB36A6A9659D16395E0 /* Pods-MapPin.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -456,6 +491,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = hnaik.MapPin;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -465,6 +501,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BC60A4D42BD91A3AF0396F6A /* Pods-MapPin.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -491,6 +528,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 74B77EE2867AECCC4F16865F /* Pods-MapPinTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H4V3747L77;
 				INFOPLIST_FILE = MapPinTests/Info.plist;
@@ -501,6 +540,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = hnaik.MapPinTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -510,6 +550,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E30A1FE58A42651799CBC412 /* Pods-MapPinTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H4V3747L77;
 				INFOPLIST_FILE = MapPinTests/Info.plist;
