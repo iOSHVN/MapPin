@@ -10,9 +10,10 @@ public class MapPinManager: MapPinManagerProtocol {
     let viewController: PinViewController
     
     public init() {
-        let storyBoard = UIStoryboard.init(name: MapPinConstants.pinStoryboardName, bundle: nil)
+        let storyBoard = UIStoryboard.init(name: MapPinConstants.pinStoryboardName, bundle: Bundle(identifier: "org.cocoapods.MapPin"))
         if let viewController = storyBoard.instantiateViewController(withIdentifier: MapPinConstants.pinViewControllerName) as? PinViewController {
             self.viewController = viewController
+            self.viewController.loadViewIfNeeded()
         } else {
             self.viewController = PinViewController()
             assertionFailure("Pin view controller is missing.")
@@ -42,6 +43,7 @@ public class MapPinManager: MapPinManagerProtocol {
     }
     
     func setViewControllerControls(forPinImage pinImage: UIImage?, withIconImage iconImage: UIImage?, andBorderColor color: UIColor?) {
+        viewController.borderImageView.image = pinImage
         viewController.borderImageView.tintColor = color
         viewController.pinImageView.image = pinImage
         viewController.pinIconImageView.image = iconImage

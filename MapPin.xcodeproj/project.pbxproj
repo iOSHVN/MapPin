@@ -18,6 +18,8 @@
 		A2AC03EA21C985C800024A7D /* MapPinManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AC03E921C985C800024A7D /* MapPinManagerProtocol.swift */; };
 		A2AC03EE21C99F9200024A7D /* MapPinConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AC03ED21C99F9200024A7D /* MapPinConstants.swift */; };
 		A2AC03F021C9A17600024A7D /* MapPinManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AC03EF21C9A17600024A7D /* MapPinManagerTests.swift */; };
+		A2AC03F321C9A43600024A7D /* MapPin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2AC03F121C9A43600024A7D /* MapPin.jpg */; };
+		A2AC03F421C9A43600024A7D /* IconImage.png in Resources */ = {isa = PBXBuildFile; fileRef = A2AC03F221C9A43600024A7D /* IconImage.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		A2AC03E921C985C800024A7D /* MapPinManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPinManagerProtocol.swift; sourceTree = "<group>"; };
 		A2AC03ED21C99F9200024A7D /* MapPinConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPinConstants.swift; sourceTree = "<group>"; };
 		A2AC03EF21C9A17600024A7D /* MapPinManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPinManagerTests.swift; sourceTree = "<group>"; };
+		A2AC03F121C9A43600024A7D /* MapPin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MapPin.jpg; sourceTree = "<group>"; };
+		A2AC03F221C9A43600024A7D /* IconImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IconImage.png; sourceTree = "<group>"; };
 		B433C465328C8ED1FC9C791A /* libPods-MapPin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MapPin.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC60A4D42BD91A3AF0396F6A /* Pods-MapPin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapPin.release.xcconfig"; path = "Pods/Target Support Files/Pods-MapPin/Pods-MapPin.release.xcconfig"; sourceTree = "<group>"; };
 		C1B20CB36A6A9659D16395E0 /* Pods-MapPin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapPin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MapPin/Pods-MapPin.debug.xcconfig"; sourceTree = "<group>"; };
@@ -127,6 +131,8 @@
 		A22F6FA921C97978004076C7 /* MapPinTests */ = {
 			isa = PBXGroup;
 			children = (
+				A2AC03F221C9A43600024A7D /* IconImage.png */,
+				A2AC03F121C9A43600024A7D /* MapPin.jpg */,
 				A22F6FAC21C97978004076C7 /* Info.plist */,
 				A2AC03EF21C9A17600024A7D /* MapPinManagerTests.swift */,
 			);
@@ -263,6 +269,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2AC03F421C9A43600024A7D /* IconImage.png in Resources */,
+				A2AC03F321C9A43600024A7D /* MapPin.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,7 +496,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hnaik.MapPin;
+				PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.MapPin;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -516,7 +524,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hnaik.MapPin;
+				PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.MapPin;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
@@ -538,7 +546,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hnaik.MapPinTests;
+				PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.MapPinTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
@@ -560,7 +568,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hnaik.MapPinTests;
+				PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.MapPinTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
