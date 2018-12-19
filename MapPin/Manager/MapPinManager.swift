@@ -5,12 +5,26 @@
 
 import Foundation
 
+public enum PinSize {
+    case normal
+    case large
+    
+    func getSize() -> CGSize {
+        switch self {
+        case .normal:
+            return CGSize(width: 40, height: 60)
+        case .large:
+            return CGSize(width: 60, height: 80)
+        }
+    }
+}
+
 public class MapPinManager: MapPinManagerProtocol {
     
     let viewController: PinViewController
     
-    public init() {
-        let storyBoard = UIStoryboard.init(name: MapPinConstants.pinStoryboardName, bundle: Bundle(identifier: "org.cocoapods.MapPin"))
+    public init(pinSize: PinSize) {
+        let storyBoard = UIStoryboard.init(name: MapPinConstants.pinStoryboardName, bundle: MapPinConstants.mapPinBundle)
         if let viewController = storyBoard.instantiateViewController(withIdentifier: MapPinConstants.pinViewControllerName) as? PinViewController {
             self.viewController = viewController
             self.viewController.loadViewIfNeeded()
@@ -18,18 +32,10 @@ public class MapPinManager: MapPinManagerProtocol {
             self.viewController = PinViewController()
             assertionFailure("Pin view controller is missing.")
         }
-    }
-    
-    public convenience init(viewFrameSize: CGSize) {
-        self.init()
         let points = CGPoint(x: self.viewController.view.frame.origin.x, y: self.viewController.view.frame.origin.y)
-        let viewFrame = CGRect(origin: points, size: viewFrameSize)
+        let viewFrame = CGRect(origin: points, size: pinSize.getSize())
         self.viewController.view.frame = viewFrame
-    }
-    
-    public convenience init(viewFrameSize: CGSize, iconFrameSize: CGSize) {
-        self.init(viewFrameSize: viewFrameSize)
-        self.viewController.pinIconImageView.frame.size = iconFrameSize
+        self.viewController.updateConstraint(forPinSize: pinSize)
     }
     
     public func getPinView(forPinImage pinImage: UIImage?, withIconImage iconImage: UIImage?, andBorderColor color: UIColor?) -> UIView {

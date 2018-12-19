@@ -11,7 +11,7 @@ class MapPinManagerTests: XCTestCase {
     var pinManager: MapPinManager!
     
     override func setUp() {
-        pinManager = MapPinManager(viewFrameSize: CGSize(width: 39, height: 58), iconFrameSize: CGSize(width: 25, height: 25))
+        pinManager = MapPinManager(pinSize: .large)
     }
 
     override func tearDown() {

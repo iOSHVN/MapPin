@@ -15,43 +15,45 @@
             <objects>
                 <viewController storyboardIdentifier="PinViewController" id="aWd-t4-N39" customClass="PinViewController" customModule="MapPin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fbT-zn-JkV">
-                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="150"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TD8-e5-YMh">
-                                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                <rect key="frame" x="1" y="1" width="100" height="150"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1bU-5V-nId">
-                                <rect key="frame" x="1" y="1" width="198" height="198"/>
+                                <rect key="frame" x="2" y="2" width="96" height="146"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gU3-EY-cWQ">
-                                <rect key="frame" x="10" y="10" width="180" height="180"/>
+                                <rect key="frame" x="20" y="10" width="60" height="115"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="TD8-e5-YMh" firstAttribute="top" secondItem="fbT-zn-JkV" secondAttribute="top" id="2Ze-VI-puz"/>
-                            <constraint firstAttribute="trailing" secondItem="gU3-EY-cWQ" secondAttribute="trailing" constant="10" id="6I8-le-GKw"/>
-                            <constraint firstAttribute="bottom" secondItem="gU3-EY-cWQ" secondAttribute="bottom" constant="10" id="8qB-ss-ic1"/>
-                            <constraint firstAttribute="bottom" secondItem="1bU-5V-nId" secondAttribute="bottom" constant="1" id="BS3-FK-Ml5"/>
-                            <constraint firstItem="TD8-e5-YMh" firstAttribute="leading" secondItem="gem-hy-cE2" secondAttribute="leading" id="H8u-dq-9um"/>
+                            <constraint firstItem="TD8-e5-YMh" firstAttribute="top" secondItem="fbT-zn-JkV" secondAttribute="top" constant="1" id="2Ze-VI-puz"/>
+                            <constraint firstAttribute="trailing" secondItem="gU3-EY-cWQ" secondAttribute="trailing" constant="20" id="6I8-le-GKw"/>
+                            <constraint firstAttribute="bottom" secondItem="gU3-EY-cWQ" secondAttribute="bottom" constant="25" id="8qB-ss-ic1"/>
+                            <constraint firstAttribute="bottom" secondItem="1bU-5V-nId" secondAttribute="bottom" constant="2" id="BS3-FK-Ml5"/>
+                            <constraint firstItem="TD8-e5-YMh" firstAttribute="leading" secondItem="gem-hy-cE2" secondAttribute="leading" constant="1" id="H8u-dq-9um"/>
                             <constraint firstItem="gU3-EY-cWQ" firstAttribute="top" secondItem="fbT-zn-JkV" secondAttribute="top" constant="10" id="HHc-st-jXl"/>
-                            <constraint firstItem="TD8-e5-YMh" firstAttribute="trailing" secondItem="gem-hy-cE2" secondAttribute="trailing" id="J1I-hU-nME"/>
-                            <constraint firstItem="1bU-5V-nId" firstAttribute="leading" secondItem="fbT-zn-JkV" secondAttribute="leading" constant="1" id="bGM-if-kdN"/>
-                            <constraint firstItem="TD8-e5-YMh" firstAttribute="bottom" secondItem="gem-hy-cE2" secondAttribute="bottom" id="d4l-9o-YAD"/>
-                            <constraint firstAttribute="trailing" secondItem="1bU-5V-nId" secondAttribute="trailing" constant="1" id="hbn-sN-szM"/>
-                            <constraint firstItem="1bU-5V-nId" firstAttribute="top" secondItem="fbT-zn-JkV" secondAttribute="top" constant="1" id="tuy-E2-B1D"/>
-                            <constraint firstItem="gU3-EY-cWQ" firstAttribute="leading" secondItem="fbT-zn-JkV" secondAttribute="leading" constant="10" id="xbO-hy-FNp"/>
+                            <constraint firstItem="TD8-e5-YMh" firstAttribute="trailing" secondItem="gem-hy-cE2" secondAttribute="trailing" constant="1" id="J1I-hU-nME"/>
+                            <constraint firstItem="1bU-5V-nId" firstAttribute="leading" secondItem="fbT-zn-JkV" secondAttribute="leading" constant="2" id="bGM-if-kdN"/>
+                            <constraint firstItem="TD8-e5-YMh" firstAttribute="bottom" secondItem="gem-hy-cE2" secondAttribute="bottom" constant="1" id="d4l-9o-YAD"/>
+                            <constraint firstAttribute="trailing" secondItem="1bU-5V-nId" secondAttribute="trailing" constant="2" id="hbn-sN-szM"/>
+                            <constraint firstItem="1bU-5V-nId" firstAttribute="top" secondItem="fbT-zn-JkV" secondAttribute="top" constant="2" id="tuy-E2-B1D"/>
+                            <constraint firstItem="gU3-EY-cWQ" firstAttribute="leading" secondItem="fbT-zn-JkV" secondAttribute="leading" constant="20" id="xbO-hy-FNp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gem-hy-cE2"/>
                     </view>
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="200" height="200"/>
+                    <size key="freeformSize" width="100" height="150"/>
                     <connections>
                         <outlet property="borderImageView" destination="TD8-e5-YMh" id="u3p-eh-EDH"/>
                         <outlet property="pinIconImageView" destination="gU3-EY-cWQ" id="ACH-WU-a7A"/>
+                        <outlet property="pinIconLeadingConstraint" destination="xbO-hy-FNp" id="JCj-3h-UG1"/>
+                        <outlet property="pinIconTrailingConstraint" destination="6I8-le-GKw" id="EeV-m8-XLW"/>
                         <outlet property="pinImageView" destination="1bU-5V-nId" id="bNY-0i-7IY"/>
                     </connections>
                 </viewController>
