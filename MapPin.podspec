@@ -8,7 +8,7 @@ s.version = "1.0.0"
 s.license = { :type => "MIT", :file => "LICENSE" }
 s.author = { "Hiral Naik" => "hrlnaik@gmail.com" }
 s.homepage = "https://github.com/iOSHVN/MapPin"
-s.source = { :git => "https://github.com/iOSHVN/MapPin.git" }
+s.source = { :git => "https://github.com/iOSHVN/MapPin.git", :branch => "master", :tag => s.version.to_s }
 s.framework = "UIKit"
 s.source_files = "MapPin/**/*.{swift}"
 s.resources = "MapPin/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
