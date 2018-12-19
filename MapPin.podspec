@@ -10,4 +10,7 @@ Pod::Spec.new do |s|
   s.source_files = "MapPin/**/*.{swift,h,m}"
   s.swift_version = '4.2'
   s.cocoapods_version = '>= 1.5.3'
+  s.resource_bundles = {
+    'MapPin' => ['Pod/Classes/**/*.{storyboard,xib,xcassets,json,imageset,png}']
+  }
 end
