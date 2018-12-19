@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "MapPin"
-  s.version = "1.0.0"
+  s.version = "0.0.1"
   s.summary = "MapPin lets a user to generate map pin."
   s.homepage = "https://github.com/iOSHVN/MapPin"
   s.license = { :type => "MIT", :file => "LICENSE" }
